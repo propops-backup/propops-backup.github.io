@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Information about the private Property Operations Backup application and its use of Google Drive.">
+  <title>Property Operations Backup</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Property Operations Backup home">
+      <span class="brand-mark" aria-hidden="true">PO</span>
+      <span>Property Operations Backup</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="./privacy/">Privacy</a>
+      <a href="./terms/">Terms</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Private, owner-operated backup utility</p>
+      <h1>Encrypted backups, stored with narrow Google Drive access.</h1>
+      <p class="lede">Property Operations Backup creates encrypted recovery archives and stores them in a dedicated Google Drive folder controlled by the operator.</p>
+      <div class="scope-card" aria-label="Google Drive permission summary">
+        <span class="scope-label">Google permission</span>
+        <code>drive.file</code>
+        <p>The application can work only with Drive files and folders that it creates or that are explicitly made available to it. It does not request access to the rest of the account’s Drive.</p>
+      </div>
+    </section>
+
+    <section class="process" aria-labelledby="process-title">
+      <div>
+        <p class="eyebrow">How it works</p>
+        <h2 id="process-title">A deliberately small access boundary</h2>
+      </div>
+      <ol>
+        <li><strong>Capture</strong><span>The authorized backup process prepares a recovery archive.</span></li>
+        <li><strong>Encrypt</strong><span>The archive is encrypted locally before it leaves the backup host.</span></li>
+        <li><strong>Store</strong><span>Only encrypted backup files are uploaded to the dedicated Drive folder.</span></li>
+        <li><strong>Verify</strong><span>Uploaded ciphertext is checked for integrity and retained under the configured backup policy.</span></li>
+      </ol>
+    </section>
+
+    <section class="principles" aria-labelledby="principles-title">
+      <p class="eyebrow">Operating principles</p>
+      <h2 id="principles-title">Built for recovery, not data collection</h2>
+      <div class="principle-grid">
+        <article><h3>Least privilege</h3><p>The application requests only the non-sensitive <code>drive.file</code> scope.</p></article>
+        <article><h3>Encrypted first</h3><p>Property Operations data is encrypted before upload. Recovery keys are kept outside Google Drive.</p></article>
+        <article><h3>No advertising</h3><p>Google user data is not sold, shared for advertising, or used to build advertising profiles.</p></article>
+      </div>
+    </section>
+
+    <section class="policy-callout" aria-labelledby="policy-title">
+      <div>
+        <p class="eyebrow">Transparency</p>
+        <h2 id="policy-title">Read the data-use details</h2>
+      </div>
+      <div class="policy-links">
+        <a href="./privacy/">Privacy policy <span aria-hidden="true">→</span></a>
+        <a href="./terms/">Terms of service <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Property Operations Backup</p>
+    <p>Support: <a href="mailto:propops.backup@gmail.com">propops.backup@gmail.com</a></p>
+  </footer>
+</body>
+</html>
