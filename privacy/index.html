@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for Property Operations Backup.">
+  <title>Privacy Policy | Property Operations Backup</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../" aria-label="Property Operations Backup home"><span class="brand-mark" aria-hidden="true">PO</span><span>Property Operations Backup</span></a>
+    <nav aria-label="Primary navigation"><a aria-current="page" href="./">Privacy</a><a href="../terms/">Terms</a></nav>
+  </header>
+  <main class="policy-page">
+    <header class="policy-heading"><p class="eyebrow">Effective October 13, 2026</p><h1>Privacy policy</h1><p>This policy explains how the private, owner-operated Property Operations Backup application accesses and uses Google user data.</p></header>
+    <article class="policy-body">
+      <section><h2>Purpose of the application</h2><p>Property Operations Backup creates encrypted recovery archives for the operator’s Property Operations system and stores those encrypted archives in a dedicated Google Drive folder.</p></section>
+      <section><h2>Google data accessed</h2><p>The application requests only <code>https://www.googleapis.com/auth/drive.file</code>. This permission allows it to create and manage Drive files and folders that it creates or that the Google account holder explicitly makes available to it. The application does not request access to all files in Google Drive, Gmail messages, contacts, calendars, or other Google services.</p></section>
+      <section><h2>How Google data is used</h2><p>Google Drive access is used only to create or locate the dedicated backup folder, upload encrypted backup archives, verify uploaded ciphertext, avoid duplicate uploads, apply the configured retention policy to application-created backup files, and retrieve an encrypted archive for an authorized recovery test or restoration.</p></section>
+      <section><h2>Storage and security</h2><p>Backup contents are encrypted before upload. Only ciphertext is intended to be stored in Google Drive. OAuth credentials and refresh tokens are retained only in an approved protected local or deployment secret store and are not placed in the backup archive, source repository, public website, or Google Drive folder. Recovery keys are maintained separately from Google Drive and the encrypted archives.</p></section>
+      <section><h2>Retention and deletion</h2><p>Encrypted backup files are retained according to the operator’s configured recovery policy. The application may delete or trash only backup files it created and marked inside its configured Drive folder. The operator may retain verified recovery points for operational, security, or legal needs and may delete them when they are no longer required.</p></section>
+      <section><h2>Sharing and disclosure</h2><p>Google user data is not sold, rented, used for advertising, or used to create advertising profiles. Data is not shared with third parties except when required to operate an authorized hosting or storage service, comply with law, protect the system, or complete an owner-authorized recovery activity.</p></section>
+      <section><h2>Human access</h2><p>Access is limited to the owner and specifically authorized operators who need it for backup administration, security review, or recovery. Access is subject to least-privilege controls and operational audit practices.</p></section>
+      <section><h2>Revoking access</h2><p>The Google account holder can revoke the application’s access at any time from the Google Account third-party connections page. Revocation prevents new Drive access but does not automatically delete encrypted archives already stored in Drive.</p></section>
+      <section><h2>Policy changes</h2><p>This policy will be updated when the application’s data practices materially change. The effective date at the top of this page identifies the current version.</p></section>
+      <section><h2>Contact</h2><p>Privacy or access questions may be sent to <a href="mailto:propops.backup@gmail.com">propops.backup@gmail.com</a>.</p></section>
+    </article>
+  </main>
+  <footer><p>Property Operations Backup</p><p><a href="../">Home</a> · <a href="../terms/">Terms</a></p></footer>
+</body>
+</html>
